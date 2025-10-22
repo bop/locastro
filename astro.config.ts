@@ -13,8 +13,8 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: SITE.website,
-  site: 'https://bop.github.io/locastro/',
+  site: 'https://bop.github.io/',
+  base: '/locastro',
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
